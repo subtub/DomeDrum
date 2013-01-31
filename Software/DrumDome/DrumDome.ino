@@ -12,7 +12,7 @@ FSR fsr[NUM_FSRS];
 #define PIN_START 12
 
 #define MIDI_CHANNEL 1
-#define MIDI_NOTE_START 12 // C4
+#define MIDI_NOTE_START 48 // C4
 
 #define VELOCITY_DEF_THRESHOLD 1 // der standart thresholöd [0..127]
 
