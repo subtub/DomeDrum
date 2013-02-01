@@ -22,7 +22,7 @@ void FSR::update() {
   */
   if(!active && velocity > threshold){
     // send midi note on with new velocity
-    usbMIDI.sendNoteOn(midiNote, velocity, midiChannel);    
+    usbMIDI.sendNoteOn(midiNote, velocity, midiChannel);
     active = true;
   }
   if(active && velocity < threshold){
