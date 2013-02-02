@@ -58,7 +58,6 @@ void loop() {
   capBuffer[capBufferCounter] = total1;
   long avg = getAverage(capBuffer, CAPSENSE_BUFFER_SIZE);  
   capBufferCounter++;
-  usbMIDI.sendNoteOn(midiNote, map()getAverage, 300, midiChannel);
   Serial.println(avg);
   /*
   if(total1 > max){
