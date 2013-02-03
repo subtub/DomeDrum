@@ -1,45 +1,54 @@
-
-/*
-
 #include <CapSense.h>
 
-CapSense cs = CapSense(4, 6);
+/*
+  Macbook Netzteil dran, sonst reagiert CapSense beim Tippern auf Laptop...
+*/
+
+CapSense cs = CapSense(4, 6); // 2.7M resistor between pins 4 & 6, pin 6 is sensor pin, add a wire and or foil;
 
 int max = 0;
 long capBuffer[CAPSENSE_BUFFER_SIZE];
 int capBufferCounter = 0;
 
 
-void capSenseInit() {
+void initCapSense() {
   initCapBuffer();
-  cap sense
-  cs.set_CS_AutocaL_Millis(0xFFFFFFFF);     // turn off autocalibrate on channel 1 - just as an example
+  cs.set_CS_AutocaL_Millis(0xFFFFFFFF);     // turn off autocalibrate on channel 1
+  //cs.set_CS_AutocaL_Millis(10000);     // turn off autocalibrate on channel 1
 }
 
 
 void capSenseUpdate() {
+  // read value
   long total1 =  cs.capSense(30);
+  
+  // store in buffer / reset buffer index // increment buffer
   if(capBufferCounter >= CAPSENSE_BUFFER_SIZE) capBufferCounter = 0;
   capBuffer[capBufferCounter] = total1;
-  long avg = getAverage(capBuffer, CAPSENSE_BUFFER_SIZE);  
   capBufferCounter++;
-  Serial.println(avg);
   
-  //if(total1 > max){
-    //max = total1;
-    ((Serial.println(total1);
-  //}
-  //Serial.println(total1);
-  int capSensThresh = 150;
-  int total2 = 0;
-  if(total1 < capSensThresh){
-    total2 = 0;
+  // calculate average
+  long avg = getAverage(capBuffer, CAPSENSE_BUFFER_SIZE);  
+    
+  int mappedCapVal = 0;
+  //if(total1 < CAP_SENSE_THRESH){
+  if(avg < CAP_SENSE_AVG_THRESH){
+    mappedCapVal = 0;
   }
   else {
-    total2 = map(total1, 0, 700, 40, 127);
+    //mappedCapVal = map(avg, CAP_SENSE_THRESH, 240, 0, 127);
+    mappedCapVal = map(avg, 0, 240, 0, 127);
   }
+  Serial.print("CapSense: Value: ");
+  Serial.print(total1);
+  Serial.print("\tAverage: ");
+  Serial.print(avg);
+  Serial.print("\tMappedVal: ");
+  Serial.print(mappedCapVal);
+  Serial.print("\n");
   
-  //usbMIDI.sendNoteOn(100, total2, 1);
+  //usbMIDI.sendNoteOn(100, mappedCapVal, 1);
+  usbMIDI.sendControlChange(CAP_SENSE_MIDI_NOTE, mappedCapVal, CAP_SENSE_MIDI_CHANNEL);
   
 }
 
@@ -57,6 +66,3 @@ void initCapBuffer(){
     capBuffer[i] = 0;
   }
 }
-
-
-*/

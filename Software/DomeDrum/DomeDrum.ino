@@ -6,9 +6,11 @@
  */
 
 #include "DomeDrumConstants.h"
-
 #include "FSR.h"
+
 FSR fsr[FSR_TOTAL];
+
+boolean capSenseActive = true;
 
 
 /**
@@ -17,7 +19,9 @@ FSR fsr[FSR_TOTAL];
 void setup() {
   initDebugLed();
   initFsrs();
-  //capSenseInit();
+  if(capSenseActive){
+    initCapSense();
+  }
   Serial.begin(9600);
   Serial.println("hello");
 }
@@ -51,8 +55,10 @@ void initFsrs(){
 void loop() {
   loopDebugLed();
   loopFsrs();
-  //capSenseUpdate();
-  delay(1);
+  if(capSenseActive){
+    capSenseUpdate();
+  }
+  delay(10);
 }
 
 
