@@ -37,7 +37,8 @@ void capSenseUpdate() {
   }
   else {
     //mappedCapVal = map(avg, CAP_SENSE_THRESH, 240, 0, 127);
-    mappedCapVal = map(avg, 0, 240, 0, 127);
+    mappedCapVal = map(avg, CAP_SENSE_AVG_THRESH, 240, 0, 127);
+    if(mappedCapVal > 127) mappedCapVal = 127;
   }
   Serial.print("CapSense: Value: ");
   Serial.print(total1);
