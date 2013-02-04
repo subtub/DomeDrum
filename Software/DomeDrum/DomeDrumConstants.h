@@ -13,8 +13,8 @@
 // MIDI
 #define MIDI_CHANNEL 1
 #define MIDI_NOTE_START 48 // C4
-#define CAP_SENSE_MIDI_NOTE 60
-#define CAP_SENSE_MIDI_CHANNEL 1
+#define CAP_SENSE_MIDI_NOTE 12
+#define CAP_SENSE_MIDI_CHANNEL 2
 
 // Software
 // TODO: rename to FSR

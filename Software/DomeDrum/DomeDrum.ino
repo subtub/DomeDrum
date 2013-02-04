@@ -12,7 +12,6 @@ FSR fsr[FSR_TOTAL];
 
 boolean capSenseActive = true;
 
-
 /**
  * Main setup
  */

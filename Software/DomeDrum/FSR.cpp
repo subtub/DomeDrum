@@ -1,7 +1,6 @@
 
 #include "FSR.h"
 
-
 void FSR::init(int p, int t, int mc, int mn) {
   pin = p;
   midiChannel = mc;
