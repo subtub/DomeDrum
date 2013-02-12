@@ -3,12 +3,16 @@
 #define INCLUDED_FSR_H
 #include "Arduino.h"
 
+/**
+ * Force Sensitive Resistor utility class contains the sensor pin,
+ * the midi note, channel parameter and some threshold magic.
+ */
 class FSR {
   public:
   // Methods
   void init(int p, int t, int mc, int mn);
-  void read();
-  void update();
+  void updateMidiNote();
+  //void updateMidiFade();
   
   private:
   int mapToMidi(int in);
