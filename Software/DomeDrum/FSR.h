@@ -29,7 +29,7 @@ class FSR {
   // Methods
   void init(int p, int t, int mc, int mn);
   void updateMidiNote();
-  //void updateMidiFade();
+  //void updateMidiFade(); // Alternative: send midi value
   
   private:
   int mapToMidi(int in);
@@ -44,4 +44,3 @@ class FSR {
 };
 
 #endif // INCLUDED_FSR_H
-

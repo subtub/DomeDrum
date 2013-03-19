@@ -27,7 +27,6 @@ void FSR::init(int p, int t, int mc, int mn) {
   lastVelocity = 0;
 }
 
-
 void FSR::updateMidiNote() {
   // current velocity [0..127]
   int in = analogRead(pin);
@@ -44,7 +43,6 @@ void FSR::updateMidiNote() {
   lastVelocity = velocity;
 }
 
-
 /*void FSR::sendMidiFade() {
   if(lastVelocity != velocity) {
     // send midi note off message --- may be useless -> check
@@ -53,7 +51,6 @@ void FSR::updateMidiNote() {
     usbMIDI.sendNoteOn(midiNote, velocity, midiChannel);
   }
 }*/
-
 
 int FSR::mapToMidi(int in) {
   return int(map(in, 0,1023, 0,126));

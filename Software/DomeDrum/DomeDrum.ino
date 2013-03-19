@@ -1,6 +1,9 @@
 /**
  * DomeDrum - DomeDrum.ino
  *
+ * Hardware:   Teensy 2.0
+ * Version:    0.0.1
+ *
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2
@@ -16,18 +19,10 @@
  * Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-/**
- * Software für unseren DomeDrum
- *
- * Hardware:   Teensy 2.0
- * Version:    0.0.1
- */
-
 #include "DomeDrumConstants.h"
 #include "FSR.h"
 
 FSR fsr[FSR_TOTAL];
-
 boolean capSenseActive = true;
 
 /**
@@ -43,9 +38,8 @@ void setup() {
   Serial.println("hello");
 }
 
-
 /**
- * Initialize the led debug pins
+ * Initialize the LED debug pins
  */
 void initDebugLed() {
   // declare LED as output
@@ -53,7 +47,6 @@ void initDebugLed() {
   // declare pushbutton as input
   pinMode(TEENSY_PIN_BUTTON, INPUT);
 }
-
 
 /**
  * Initialize the FSR class array
@@ -64,7 +57,6 @@ void initFsrs(){
     fsr[i].init(TEENSY_PIN_FSR_START+i, VELOCITY_DEF_THRESHOLD, MIDI_CHANNEL, MIDI_NOTE_START+i);
   }
 }
-
 
 /**
  * Main loop
@@ -78,30 +70,27 @@ void loop() {
   delay(10);
 }
 
-
 /**
- * Turn on the led if button is pressed
+ * Turn on the LED if button is pressed
  */
 void loopDebugLed() {
   // read input value
   int val = digitalRead(TEENSY_PIN_BUTTON);
   // check if the input is HIGH (button released)
   if (val == HIGH) {
-    // turn LED OFF
+    // Turn LED off
     digitalWrite(TEENSY_PIN_LED, LOW);
   } else {
-    // turn LED ON
+    // Turn LED on
     digitalWrite(TEENSY_PIN_LED, HIGH);
   }
 }
 
-
 /**
- * Update all fsr sensors
+ * Update all FSR sensors
  */
 void loopFsrs() {
   for(int i=0; i<FSR_TOTAL; i++){
     fsr[i].updateMidiNote();
   }
 }
-
