@@ -4,7 +4,7 @@
 
 **DomeDrum** is an open source MIDI controller.
 
-Our aim of making the first version of **DomeDrum** was building a drum controller which feels like an analog drum. Did you ever play a [Djembe](http://en.wikipedia.org/wiki/Djembe)? It has one surface Depending on where you hit it the sound differs. We like pad-based controller like the [MPC](http://en.wikipedia.org/wiki/Music_Production_Center), too but it's far away from an anlog drum. We wanted to brings that analog feeling back.
+Our aim of making the first version of **DomeDrum** was building a drum controller which feels like an analog drum. Did you ever play a [Djembe](http://en.wikipedia.org/wiki/Djembe)? It has one surface, depending on where you hit it the sound differs. We like pad-based controller like the [MPC](http://en.wikipedia.org/wiki/Music_Production_Center), too but it's far away from an anlog drum. We wanted to brings that analog feeling back.
 
 # DIY
 
