@@ -8,7 +8,7 @@ Our aim of making the first version of **DomeDrum** was building a drum controll
 
 # DIY
 
-To asseble your own DomeDrum you need to mill the wooden body, assemble the electronics and upload our Arduino software to a [Teensie Board](http://www.pjrc.com/teensy/).
 We used an additional »head« made out of silicone on top of the wooden body for a softer feel while drumming. Use whatever you think feels good here.
-
+To asseble your own DomeDrum you need to mill the wooden body, assemble the electronics and upload our Arduino software to a [Teensie Board](http://www.pjrc.com/teensy/).
+Have a look at the [shopping list](https://github.com/subtub/DomeDrum/blob/master/README.md) to see what's needed.
 
