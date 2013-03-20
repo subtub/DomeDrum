@@ -10,7 +10,7 @@
 
 ![mdf image](http://multicamcanada.files.wordpress.com/2011/10/mdfsheets.jpg)
 
-Material for the dome, will be glued together after milling, 1.5m², 19mm height
+Material for the dome, will be glued together after milling, 600 × 700 × 19 mm
 
 # Hevea wood sheet
 
