@@ -6,7 +6,7 @@
 
 ~ [$72](https://www.adafruit.com/products/1075)
 
-## Plywood 1.5m²
+## Medium-density fiberboard (MDF) 1.5m², 19mm height
 
 ![plywood image](http://unitedplywood.in/yahoo_site_admin/assets/images/Plywood.178231148.JPG)
 
