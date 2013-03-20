@@ -1,6 +1,6 @@
 # Needed Parts
 
-## Forse sensors × 9
+## FSR-406 Forse sensors × 9
 
 ![image force sensor](https://www.adafruit.com/images/medium/1075_MED.jpg)
 
