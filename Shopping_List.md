@@ -28,7 +28,7 @@ Have a look at the Fritzing file.
 
 Used for the »head«, for a better drum feeling
 
-![silicone spray image](https://bnnn72.ssl-cdn.s.mel.secureinf.net/Product-800x800/4f0f5f72-aea8-48bd-8b41-e03a1f7d1c51.jpg)
+![silicone spray image](http://www.everfast-species.com/en/trans/catalogue/phototheque/grandes/4635-waterproof-silicon-all-joints-silicone-max.jpg)
 
 ~ $7
 
