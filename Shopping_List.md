@@ -16,7 +16,7 @@ Material for the dome, will be glued together after milling, 1.5m², 19mm height
 
 ![helvea image](http://www.holzwurm-page.de/files/images/Hevea.jpg)
 
-Used for Base plate, looks nicer than MDF.
+Used for the base plate, looks nicer than MDF. 400 × 400 × 36 mm
 
 ## Teensie 2.0 board
 
