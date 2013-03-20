@@ -6,11 +6,17 @@
 
 ~ [$72](https://www.adafruit.com/products/1075)
 
-## Medium-density fiberboard (MDF) 1.5m², 19mm height
+## Medium-density fiberboard (MDF)
 
-![plywood image](http://unitedplywood.in/yahoo_site_admin/assets/images/Plywood.178231148.JPG)
+![mdf image](http://multicamcanada.files.wordpress.com/2011/10/mdfsheets.jpg)
 
-~ $10
+Material for the dome, will be glued together after milling, 1.5m², 19mm height
+
+# Hevea wood sheet
+
+![helvea image](http://www.holzwurm-page.de/files/images/Hevea.jpg)
+
+Used for Base plate, looks nicer than MDF.
 
 ## Teensie 2.0 board
 
