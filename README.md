@@ -12,3 +12,7 @@ We used an additional »head« made out of silicone on top of the wooden body fo
 To asseble your own DomeDrum you need to mill the wooden body, assemble the electronics and upload our Arduino software to a [Teensie Board](http://www.pjrc.com/teensy/).
 Have a look at the [shopping list](https://github.com/subtub/DomeDrum/blob/master/Shopping_List.md) to see what's needed.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/subtub/domedrum/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
